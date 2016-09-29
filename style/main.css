@@ -1,0 +1,274 @@
+.topbar {
+	width: 12%;
+	margin: 18px auto;
+}
+.covercontainer {
+	margin: 5px auto;
+	max-width: 1400px;
+}
+.midtext {
+	text-align: center;
+	margin: 30px auto;
+}
+.midtext:hover {
+	color: #131313;
+	text-shadow: 0px 1px 0px #b0b0b0;
+}
+.midpiccontainer {
+	margin: 5px auto;
+	max-width: 1400px;
+	position: relative;
+}
+.midpiccontainer:hover {
+	cursor: pointer;
+}
+.midpic1, .midpic2, .midpic1-min, .midpic2-min {
+	transition: all 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.midpic1, .midpic1_hover, .midpic2, .midpic2_hover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.midpic1:hover, .midpic2:hover {
+	opacity: 0;
+}
+
+.articlecontainer {
+	max-width: 1400px;
+	width: 80%;
+	margin: 5rem auto;
+	padding: 0px 10px;
+	text-align: center;
+}
+.articlehead {
+	text-align: center;
+	font-size: 4rem;
+	font-family: "Times New Roman";
+	margin-bottom: 3rem;
+}
+.articleheadunderline {
+	height: 1px;
+	width: 8.5em;
+	margin: -3.2rem auto 3rem;
+	box-shadow: 0px 1px 1px #202020;
+}
+.articlelist {
+	padding: 10px;
+	padding-bottom: 1.5rem;
+	margin-bottom: 2.5rem;
+	border-bottom: 1px #999999 solid;
+}
+.article-title {
+	font-size: 2.5rem;
+	color: #202020;
+	line-height: 2em;
+	font-weight: 500;
+}
+.article-title:hover, .article-title:visited {
+	color: #202020;
+}
+.article-author {
+	font-size: 1.6rem;
+	color: #999999;
+}
+.article-dateline {
+	font-size: 1.6rem;
+	color: #999999;
+	margin-left: 15px;
+}
+.article-description {
+	margin-top: 1em;
+	text-align: left;
+	text-indent: 2em;
+}
+
+.photocontainer {
+	max-width: 1400px;
+	width: 80%;
+	margin: 5rem auto 0rem;
+	padding: 0px 10px;
+}
+.photohead {
+	text-align: center;
+	font-size: 4rem;
+	font-family: "Times New Roman";
+	margin-bottom: 2rem;
+}
+.photoheadunderline {
+	height: 1px;
+	width: 14.5em;
+	margin: -2rem auto 3rem;
+	box-shadow: 0px 1px 1px #202020;
+}
+.photolist {
+	padding: 20px 5rem 30px 5rem;
+}
+.photo-content {
+	transition: all 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.photo-content:hover {
+	opacity: 0.7;
+}
+.photo-description {
+	margin-top: 1em;
+	margin-bottom: 0.6em;
+	color: #333;
+}
+.photo-gap {
+	height: 1px;
+	width: 200px;
+	margin-top: 1.5rem;
+	margin-bottom: 0.5rem;
+	box-shadow: 0px 1px 1px #999999;
+}
+.heartcontainer {
+	position: relative;
+	display: inline;
+}
+.heartcontainer:hover {
+	cursor: pointer;
+}
+.heart-show, .heart-hide {
+	width: 1.4rem;
+	position: absolute;
+	top: 3px;
+	left: 0px;
+}
+.heart-hide {
+	opacity: 0;
+	transition: all 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+/*.heart-hide:hover {
+	opacity: 1;
+}*/
+.like {
+	margin-left: 1.8rem;
+	font-size: 1.5rem;
+	color: #999;
+}
+.like:hover {
+	color: #666;
+}
+.photo-date-a {
+	color: #999999;
+	margin-left: 1em;
+}
+.photo-date-a:hover {
+	text-decoration: none;
+	color: #666;
+}
+.photo-cal-icon {
+	font-size: 1.4rem;
+	color: inherit;
+}
+.photo-dateline {
+	font-size: 1.4rem;
+	color: inherit;
+	margin-left: 3px;
+}
+.photo-num {
+	font-size: 1.4rem;
+	color: inherit;
+}
+
+.about {
+	margin: 5rem auto 10px;
+	padding: 20px;
+	width: 80%;
+}
+.about p {
+	text-indent: 2em;
+}
+#about-title {
+	font-size: 3rem;
+	font-weight: 100;
+	text-align: center;
+	text-indent: 0em;
+	margin-bottom: 1rem;
+}
+.aboutunderline {
+	height: 1px;
+	width: 10em;
+	margin: -0.6rem auto 2rem;
+	box-shadow: 0px 1px 2px #202020;
+}
+.contactmecontainer, .contactmecontainer:hover, .contactmecontainer:link {
+	text-decoration: none;
+}
+.contactme {
+	max-width: 1400px;
+	width: 80%;
+	border: 1px #232323 solid;
+	padding: 10px;
+	text-align: center;
+	margin: 40px auto;
+	font-size: 20px;
+}
+.contactme:hover {
+	background-color: #232323;
+	color: #f5f5f5;
+}
+
+@media (max-width: 900px) {
+	.coverpic {
+		display: none;
+	}
+	.midpic1, .midpic1-hover {
+		display: none;
+	}
+	.midpic2, .midpic2-hover {
+		display: none;
+	}
+	.topbar {
+		width: 20%;
+	}
+	.midpiccontainer {
+		margin: 2px auto;
+	}
+	.articlecontainer, .about {
+		width: 90%;
+	}
+	.articleheadunderline {
+		width: 7em;
+	}
+	.article-title {
+		text-decoration: underline;
+	}
+	.photoheadunderline {
+		width: 11.5em;
+	}
+	.photocontainer {
+		width: 100%;
+	}
+	.photolist {
+		padding: 20px 2rem 30px 2rem;
+	}
+	.photo-gap {
+		margin-top: 0.5rem;
+		margin-bottom: 0.2rem;
+		width: 160px;
+	}
+	.heart-show, .heart-hide {
+		width: 1.2rem;
+		top: 2px;
+	}
+	.like {
+		margin-left: 1.5rem;
+	}
+	.aboutunderline {
+		width: 8em;
+		margin: -0.6rem auto 1.5rem;
+	}
+}
+@media (min-width: 901px) {
+	.coverpic-min {
+		display: none;
+	}
+	.midpic1-min {
+	 	display: none;
+	}
+	.midpic2-min {
+	 	display: none;
+	} 
+}

@@ -1,0 +1,96 @@
+.topbar {
+	width: 12%;
+	margin: 18px auto;
+}
+.photocontainer {
+	width: 70%;
+	margin: 50px auto;
+}
+.photo-content {
+	margin-bottom: 10px;
+}
+.photo-description {
+	margin-top: 1em;
+	margin-bottom: 0.6em;
+	color: #333;
+}
+.photo-gap {
+	height: 1px;
+	width: 200px;
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+	box-shadow: 0px 1px 1px #999999;
+}
+
+.heartcontainer {
+	position: relative;
+	display: inline;
+}
+.heartcontainer:hover {
+	cursor: pointer;
+}
+.heart-show, .heart-hide {
+	width: 1.4rem;
+	position: absolute;
+	top: 3px;
+	left: 0px;
+}
+.heart-hide {
+	opacity: 0;
+	transition: all 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.like {
+	margin-left: 1.8rem;
+	font-size: 1.5rem;
+	color: #999;
+}
+.like:hover {
+	color: #666;
+}
+.photo-date {
+	display: inline;
+	color: #999999;
+	margin-left: 1em;
+}
+.photo-date:hover {
+	text-decoration: none;
+	color: #666;
+}
+.photo-cal-icon {
+	font-size: 1.4rem;
+	color: inherit;
+}
+.photo-dateline {
+	font-size: 1.4rem;
+	color: inherit;
+	margin-left: 3px;
+}
+.photo-num {
+	font-size: 1.4rem;
+	color: inherit;
+}
+.commentcontainer {
+	width: 70%;
+	margin: 100px auto 0px;
+}
+@media (max-width: 900px) {
+	.topbar {
+		width: 20%;
+	}
+	.photo-gap {
+		margin-top: 0.8rem;
+		margin-bottom: 0.5rem;
+		width: 160px;
+	}
+	.heart-show, .heart-hide {
+		width: 1.2rem;
+		top: 2px;
+	}
+	.like {
+		margin-left: 1.5rem;
+	}
+	.commentcontainer {
+		width: 80%;
+		margin: 60px auto 0px;
+	}
+}

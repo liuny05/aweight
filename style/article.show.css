@@ -1,0 +1,99 @@
+.topbar {
+	width: 12%;
+	margin: 18px auto;
+}
+/*.articlehead {
+	text-align: center;
+	font-size: 4rem;
+	font-family: "Times New Roman";
+	margin-bottom: 3rem;
+	margin-top: 50px;
+}
+.articleheadunderline {
+	height: 1px;
+	width: 8.5em;
+	margin: -3.2rem auto 3rem;
+	box-shadow: 0px 1px 1px #202020;
+}*/
+.articlecontainer {
+	width: 60%;
+	margin: 80px auto;
+}
+.article-title {
+	margin-bottom: 1rem;
+}
+.article-author, .article-dateline {
+	color: #999;
+	font-size: 1.5rem;
+}
+.article-content {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.heartcontainer, .eyecontainer {
+	position: relative;
+	display: inline;
+}
+.eyecontainer {
+	margin-left: 1em;
+}
+.heartcontainer:hover {
+	cursor: pointer;
+}
+.heart-show, .heart-hide {
+	width: 1.5rem;
+	position: absolute;
+	top: 2px;
+	left: 0px;
+}
+.eye {
+	width: 1.9rem;
+	position: absolute;
+	top: 5px;
+	left: 0px;
+}
+.heart-hide {
+	opacity: 0;
+	transition: all 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.like {
+	margin-left: 1.8rem;
+	font-size: 1.5rem;
+	color: #999;
+}
+.read {
+	margin-left: 2.2rem;
+	font-size: 1.5rem;
+	color: #999;
+}
+.like:hover, .read:hover {
+	color: #666;
+}
+.commentcontainer {
+	width: 60%;
+	margin: 60px auto 0px;
+}
+@media (max-width: 900px) {
+	.topbar {
+		width: 20%;
+	}
+	.articlecontainer {
+		width: 80%;
+		margin: 50px auto;
+	}
+	.article-title {
+		font-size: 4rem;
+	}
+	.heart-show, .heart-hide {
+		width: 1.2rem;
+		top: 2px;
+	}
+	.eye {
+		width: 1.6rem;
+		top: 4px;
+	}
+	.commentcontainer {
+		width: 80%;
+		margin: 50px auto 0px;
+	}
+}

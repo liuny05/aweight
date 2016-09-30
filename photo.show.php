@@ -28,8 +28,10 @@
  	<meta charset="UTF-8">
  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
- 	<title>Photography</title>
+    <meta name="renderer" content="webkit">
+ 	<title>Photography | 一股重口味</title>
  	<!-- link -->
+    <link rel="shortcut icon" href="images/icon/weight.ico" type="image/x-icon">
  	<link href="style/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/photo.show.css">

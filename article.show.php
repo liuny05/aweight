@@ -28,9 +28,11 @@
  	<meta charset="UTF-8">
  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
- 	<title>Article | <?php echo $data['title']; ?></title>
+    <meta name="renderer" content="webkit">
+ 	<title><?php echo $data['title']; ?> | 一股重口味</title>
  	<!-- link -->
- 	<link href="style/bootstrap.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icon/weight.ico" type="image/x-icon">
+ 	<link href="style/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/article.show.css">
  </head>

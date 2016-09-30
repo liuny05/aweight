@@ -21,7 +21,7 @@ $(document).ready(function() {
         // ajax填充文章
         $.ajax({
             type: "GET",
-            url: "http://127.0.0.1/aweight/article.ajax.php", // 此处容易被SQL注入！！！
+            url: "article.ajax.php", // 此处容易被SQL注入！！！
             dataTypes: "json",
             success: function(data) {
                 $(".photocontainer").html("");
@@ -52,7 +52,7 @@ $(document).ready(function() {
         $.ajax({
             type: "GET",
             // async: false,
-            url: "http://127.0.0.1/aweight/photo.ajax.php", // 此处容易被SQL注入！！！
+            url: "photo.ajax.php", // 此处容易被SQL注入！！！
             dataTypes: "json",
             success: function(data) {
                 $(".articlecontainer").html("");
@@ -73,6 +73,7 @@ $(document).ready(function() {
                     likeHandle();
                     heartDisplay();
                 } else {
+                    $(".photocontainer").css("text-align","center");
                     $(".photocontainer").html("没有图片！");
                 }
             },
@@ -112,7 +113,7 @@ $(document).ready(function() {
             }
             $.ajax({
                 type: "GET",
-                url: "http://127.0.0.1/aweight/like.handle.php?type=" + heartType + "&id=" + heartId + "&likeHandle=" + likeHandle,
+                url: "like.handle.php?type=" + heartType + "&id=" + heartId + "&likeHandle=" + likeHandle,
                 dataTypes: "json",
                 success: function(data) {
                     var thisHeart = ".heartcontainer[value=" + heartId + "]";
